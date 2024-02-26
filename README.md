@@ -4,3 +4,5 @@ This is the repo for OxcarNet: Sinc Convolutional Network with Temporal and Chan
 We firstly use deep learning techniques to predict the treatment outcomes of AEDs solely based on EEG, and provide reasonable explainations.
 
 The codes for implementation of OxcarNet will be uploaded once the paper is Under Review.
+
+## New: The implementation of network and some evaluation codes are uploaded
