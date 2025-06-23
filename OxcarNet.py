@@ -4,15 +4,12 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from torchinfo import summary
-import softpool_cuda
-from SoftPool import soft_pool2d, SoftPool2d
-from torcheeg.models import EEGNet
 
 
-from oxcar_DL.models.blocks.Sinc_Conv_sepnet import SincConv
-from oxcar_DL.models.blocks.SincConv2D import SincConv2D
-from oxcar_DL.models.Simple_STSincNet import classifier
-# from oxcar_DL.models.EEGNet_changed import Temp_Attn, Spatial_Attn
+
+from oxcar_DL.models.SincConv2D import SincConv2D
+
+
 
 class Conv2dWithConstraint(nn.Conv2d):
     def __init__(self, *args, max_norm: int = 1, **kwargs):
